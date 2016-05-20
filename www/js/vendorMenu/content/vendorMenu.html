@@ -1,28 +1,68 @@
 <ion-side-menus enable-menu-with-back-views="false">
-  <ion-side-menu-content>
-    <ion-nav-bar class="bar-positive">
+  <ion-side-menu-content drag-content="false">
+    <ion-nav-bar class="bar-dark">
       <ion-nav-back-button>
       </ion-nav-back-button>
-
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
       </ion-nav-buttons>
     </ion-nav-bar>
-    <ion-nav-view name="menuContent"></ion-nav-view>
+    <ion-nav-view name="menuContent">
+      <ion-view title="Service App"></ion-view>
+    </ion-nav-view>
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <h1 class="title">Side-Menu</h1>
+      <h1 class="title">Menu</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close href="#/app/test">
-          Test
+        <div class="profile-pic-sidemenu">
+          <img src="https://s-media-cache-ak0.pinimg.com/736x/58/f6/cc/58f6cc612db505babb2d94f66de9a493.jpg" height="100" width="100"
+               class="img-round padding" menu-close ui-sref=".profile"/>
+          <p class="name-font">Steven Gerrard</p>
+        </div>
+        <ion-item menu-close href="#/app/home">
+          <i class="icon ion-ios-home"></i>
+          <span style="margin-left: 1em;"></span>
+          Home
         </ion-item>
-        <ion-item menu-close href="#/app/second">
-          Second
+        <ion-item menu-close href="#/app/favourites">
+          <i class="icon ion-star"></i>
+          <span style="margin-left: 1em;"></span>
+          Favourites
+        </ion-item>
+        <ion-item menu-close href="#/app/profile">
+          <i class="icon ion-person"></i>
+          <span style="margin-left: 1em;"></span>
+          Profile
+        </ion-item>
+        <ion-item menu-close href="#/app/joblist">
+          <i class="icon ion-briefcase"></i>
+          <span style="margin-left: 1em;"></span>
+          Job List
+        </ion-item>
+        <ion-item menu-close href="#/app/history">
+          <i class="icon ion-clock"></i>
+          <span style="margin-left: 1em;"></span>
+          History
+        </ion-item>
+        <ion-item menu-close href="#/app/about">
+          <i class="icon ion-ios-information"></i>
+          <span style="margin-left: 1em;"></span>
+          About
+        </ion-item>
+        <ion-item menu-close href="#/app/settings">
+          <i class="icon ion-gear-b"></i>
+          <span style="margin-left: 1em;"></span>
+          Settings
+        </ion-item>
+        <ion-item menu-close href="">
+          <i class="icon ion-log-out"></i>
+          <span style="margin-left: 1em;"></span>
+          Log-out
         </ion-item>
       </ion-list>
     </ion-content>

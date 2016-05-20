@@ -6,7 +6,13 @@ angular
   .module('vendorMenu', [
     'ionic',
     'vendorMenu.ctrl',
-    'test.ctrl'
+    'home.ctrl',
+    'about.ctrl',
+    'profile.ctrl',
+    'joblist.ctrl',
+    'history.ctrl',
+    'settings.ctrl',
+    'favourites.ctrl'
   ])
 
   .run(function($ionicPlatform,$timeout) {
@@ -32,24 +38,85 @@ angular
         controller:'VendorMenuCtrl as vc'
       })
 
-      .state('app.test', {
-        url: '/test',
+      .state('app.home', {
+        url: '/home',
         views: {
           'menuContent': {
-            templateUrl: 'content/test.html',
-            controller: 'TestCtrl as tc'
+            templateUrl: 'content/home.html',
+            controller: 'HomeCtrl as hc'
           }
         }
       })
-      .state('app.second', {
-        url: '/second',
+
+      .state('app.about', {
+        url: '/about',
         views: {
           'menuContent': {
-            templateUrl: 'content/second.html',
-            controller: 'SecondCtrl as sc'
+            templateUrl: 'content/about.html',
+            controller: 'AboutCtrl as ac'
+          }
+        }
+      })
+
+      .state('app.profile', {
+        url: '/profile',
+        views: {
+          'menuContent': {
+            templateUrl: 'content/profile.html',
+            controller: 'ProfileCtrl as pc'
+          }
+        }
+      })
+
+      .state('app.joblist', {
+        url: '/joblist',
+        views: {
+          'menuContent': {
+            templateUrl: 'content/joblist.html',
+            controller: 'JoblistCtrl as jc'
+          }
+        }
+      })
+
+      .state('app.history', {
+        url: '/history',
+        views: {
+          'menuContent': {
+            templateUrl: 'content/history.html',
+            controller: 'HistoryCtrl as hc'
+          }
+        }
+      })
+
+      .state('app.settings', {
+        url: '/settings',
+        views: {
+          'menuContent': {
+            templateUrl: 'content/settings.html',
+            controller: 'SettingsCtrl as sc'
+          }
+        }
+      })
+
+      .state('app.favourites', {
+        url: '/favourites',
+        views: {
+          'menuContent': {
+            templateUrl: 'content/favourites.html',
+            controller: 'FavouritesCtrl as fc'
+          }
+        }
+      })
+
+      .state('app.login', {
+        url: '/login',
+        views: {
+          'menuContent': {
+            templateUrl: '../loginPage/index.html',
+            controller: 'LoginCtrl as lc'
           }
         }
       })
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/test');
+    $urlRouterProvider.otherwise('/app/home');
   })

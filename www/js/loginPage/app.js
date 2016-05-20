@@ -1,8 +1,8 @@
 
 angular
-  .module('loginPage', [
+  .module('login', [
     'ionic',
-    'loginPage.ctrl'
+    'login.ctrl'
   ])
 
   .run(function($ionicPlatform,$timeout) {
@@ -22,12 +22,21 @@ angular
 
     $stateProvider
       .state('app', {
-        url: '/',
+        url: '/app',
         templateUrl: 'content/loginPage.html',
-        controller:'LoginPageCtrl as sc'
-      });
+        controller:'LoginCtrl as lc'
+      })
 
+      .state('vendorMenu', {
+        url: '/vendorMenu',
+        views: {
+          'menuContent': {
+            templateUrl: '../vendorMenu/index.html',
+            controller: 'VendorMenuCtrl as vc'
+          }
+        }
+      })
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/app');
 
   });

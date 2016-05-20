@@ -39,7 +39,7 @@ h1 {
 
 .logo {
   display: block;
-  margin-top: 30%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -173,4 +173,87 @@ h1 {
   box-shadow: none;
 } //end
 
+#password-field {
+
+}
 /* vendorMenu.html styling */
+.profile-pic-sidemenu {
+  align-content: center;
+  text-align: center;
+
+  .img-round {
+    border-radius: 30px;
+  }
+
+  .name-font {
+    font-size: 20px;
+  }
+}
+
+/* home.html styling */
+.slider {
+  height: 100%;
+
+  .first-slide-home {
+    padding-bottom: 30%;
+    background: url(/img/home-background.png);
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+
+    .fond-size-sentence {
+      font-size: 30px;
+    }
+  }
+
+  .second-slide-home {
+    padding-bottom: 39.65%;
+    background: url(/img/home-background2.png);
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+
+    .button {
+      text-decoration: underline;
+      color: yellow;
+    }
+
+    .deal-font-colour {
+      color: yellow;
+    }
+  }
+
+  .third-slide-home {
+    padding-bottom: 39.65%;
+    background: url(/img/home-background3.png);
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+/* joblist.html */
+//favourite too
+.bar-subheader {
+  margin-left: 25%;
+}
+
+//favourite too
+.item-text-center
+{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-left: 45%;
+  font-size: 20px;
+}
+
+/* profile.html */
+.profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}

@@ -7,7 +7,7 @@
       <input type="radio" name="seg-1" value="Register" id="seg-register">
       <label for="seg-register" class="last">Register</label>
     </nav>
-    <h1>Service App Prototype</h1>
+    <h1>Service App</h1>
     <div class="item-input-inset">
       <label class="item-input-wrapper">
         <span class="input-label">Username</span>
@@ -17,9 +17,17 @@
     <div class="item-input-inset">
       <label class="item-input-wrapper">
         <span class="input-label">Password</span>
-        <input type="password">
+        <input id="password-field" type="password">
       </label>
     </div>
-    <a href="http://localhost:63342/i/js/vendorMenu/index.html#/">click here</a>
+    <button class="button button-block button-balanced" ng-click="lc.go()">
+      Proceed
+    </button>
+    <button class="button button-block button-positive" ng-click="lc.go()">
+      Log-in With Facebook
+    </button>
+    <button class="button button-block button-assertive" ng-click="lc.go()">
+      Log-in With Google
+    </button>
   </ion-content>
 </ion-view>

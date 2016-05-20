@@ -41,5 +41,5 @@ angular.module('starter', ['ionic'])
   //only used for Ionic Serve, not in Native
   .controller('BaseCtrl', ['$window', function ($window) {
     var self = this;
-    $window.location.href = "js/vendorMenu/index.html";
+    $window.location.href = "js/loginPage/index.html";
   }]);

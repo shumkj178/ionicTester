@@ -1,8 +1,64 @@
 <ion-view ng-app="profile" view-title="Service App">
-  </ion-header-bar>
-  <ion-content>
-    <img src="https://s-media-cache-ak0.pinimg.com/736x/58/f6/cc/58f6cc612db505babb2d94f66de9a493.jpg" height="120" width="120"
-         class="profile-img padding"/>
-    <h4>Name</h4>
+  <div style="margin-left: 0" class="bar bar-subheader item item-button-right">
+    <h1 class="title">Your Profile</h1>
+    <button class="button button-dark button-clear">
+      <i class="icon ion-edit"></i>
+    </button>
+  </div>
+  <ion-content class="has-subheader">
+    <div style="display: block; text-align: center">
+      <img src="../../img/steven-gerrard.jpg" height="120" width="120"
+           class="profile-img padding"/>
+      <p style="font-size: 20px">Steven Gerrard</p>
+    </div>
+    <ion-list>
+      <ion-item class="energized-border item item-icon-left item-button-right">
+        <i class="icon ion-calculator"></i>
+        <p style="display: inline; font-size: 16px">Credits Left</p>
+        <p style="display: inline; font-size: 16px; margin-left: 20%;">10 credits</p>
+        <button class="button button-clear" ng-click="pc.popCreditTopUp()">
+          <i style="color: lightgreen" class="icon ion-plus-round"></i>
+        </button>
+      </ion-item>
+      <br>
+      <ion-item class="positive-border">
+        <div class="item item-icon-left item-button-right">
+          <i class="icon ion-star"></i>
+          <p style="font-size: 18px">Jobs Subscribed</p>
+          <button class="button button-positive button-clear">
+            <i class="icon ion-more"></i>
+          </button>
+        </div>
+        <hr>
+        <ol class="list-in-order">
+          <li style="font-size: 16px">Taxi</li>
+          <li style="font-size: 16px">Share Travel</li>
+        </ol>
+      </ion-item>
+      <br>
+      <ion-item class="royal-border">
+        <div class="item item-icon-left item-button-right">
+          <i class="icon ion-cash"></i>
+          <p style="font-size: 18px">Profit Earned</p>
+          <p style="font-size: 10px"><i>*refer more at job history</i></p>
+          <button class="button button-royal button-clear">
+            <i class="icon ion-more"></i>
+          </button>
+        </div>
+        <hr>
+        <div style="text-align: center">
+          <table style="width: 100%">
+            <tr>
+              <td>Jobs Done</td>
+              <td>Total Amount</td>
+            </tr>
+            <tr>
+              <td>3 jobs</td>
+              <td>RM486</td>
+            </tr>
+          </table>
+        </div>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

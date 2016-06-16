@@ -5,52 +5,45 @@
   'use strict';
 
   angular
-    .module('joblist.ctrl', [])
-    .controller('JoblistCtrl', ['$scope', '$rootScope', '$timeout', '$interval', '$window', '$ionicActionSheet', '$http',
-      function ($scope, $rootScope, $timeout, $interval, $window, $ionicActionSheet, $http) {
+    .module('subscription.ctrl', [])
+    .controller('SubscriptionCtrl', ['$scope', '$rootScope', '$timeout', '$interval', '$window', '$ionicActionSheet',
+      function ($scope, $rootScope, $timeout, $interval, $window, $ionicActionSheet) {
         //variables
         var self = this;
 
-        self.jobs = [];
         self.show = show;
-        self.jobClick = jobClick;
-
-        var service = $http.get("content/joblist.json");
-        service.then(function (result) {
-          self.jobs = result.data.JobList;
-        })
 
         function show() {
           var hideSheet = $ionicActionSheet.show({
             buttons: [
-              { text: 'View Job' },
-              { text: 'Add to Favourites' }
+              {text: 'View Job'},
+              {text: 'View Request'}
             ],
+            destructiveText: 'Remove from Subscription',
             titleText: 'Select Your Action',
             cancelText: 'Cancel',
             cancel: function () {
 
             },
-            buttonClicked: function () {
-              return true;
+            buttonClicked: function (index) {
+              if (index === 0) {
+                $window.location.href = "../../js/jobs/taxi/index.html";
+              }
             }
           });
-        }
 
-        function jobClick (job) {
-          // JSON.stringify(job);
-          job = job.toLowerCase();
-          job = job.split(' ').join('-');
-          $window.location.href = "../../js/jobs/" + job + "/index.html";
+          $timeout(function () {
+            hideSheet();
+          }, 5000);
         }
         // $scope.show = function() {
         //
         //   // Show the action sheet
         //   var hideSheet = $ionicActionSheet.show({
         //     buttons: [
-        //       { text: 'View Job' },
-        //       { text: 'Add to Favourites' }
+        //       { text: 'View Job' }
         //     ],
+        //     destructiveText: 'Remove from Favourites',
         //     titleText: 'Select Your Action',
         //     cancelText: 'Cancel',
         //     cancel: function() {

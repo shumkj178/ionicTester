@@ -20,19 +20,19 @@
     <ion-content>
       <ion-list>
         <div class="profile-pic-sidemenu">
-          <img src="https://s-media-cache-ak0.pinimg.com/736x/58/f6/cc/58f6cc612db505babb2d94f66de9a493.jpg" height="100" width="100"
+          <img src="../../img/steven-gerrard.jpg" height="100" width="100"
                class="img-round padding" menu-close ui-sref=".profile"/>
           <p class="name-font">Steven Gerrard</p>
         </div>
         <ion-item menu-close href="#/app/home">
-          <i class="icon ion-ios-home"></i>
-          <span style="margin-left: 1em;"></span>
+          <i class="icon ion-home"></i>
+          <span style="margin-left: 1em"></span>
           Home
         </ion-item>
-        <ion-item menu-close href="#/app/favourites">
+        <ion-item menu-close href="#/app/subscription">
           <i class="icon ion-star"></i>
           <span style="margin-left: 1em;"></span>
-          Favourites
+          Subscription
         </ion-item>
         <ion-item menu-close href="#/app/profile">
           <i class="icon ion-person"></i>
@@ -47,7 +47,12 @@
         <ion-item menu-close href="#/app/history">
           <i class="icon ion-clock"></i>
           <span style="margin-left: 1em;"></span>
-          History
+          Job History
+        </ion-item>
+        <ion-item menu-close href="#/app/distributor">
+          <i class="icon ion-person-stalker"></i>
+          <span style="margin-left: 1em;"></span>
+          Distributor
         </ion-item>
         <ion-item menu-close href="#/app/about">
           <i class="icon ion-ios-information"></i>
@@ -59,7 +64,7 @@
           <span style="margin-left: 1em;"></span>
           Settings
         </ion-item>
-        <ion-item menu-close href="">
+        <ion-item menu-close ng-click="vc.logout()">
           <i class="icon ion-log-out"></i>
           <span style="margin-left: 1em;"></span>
           Log-out

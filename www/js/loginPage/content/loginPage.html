@@ -1,32 +1,44 @@
+<div class="bar bar-header bar-dark">
+  <h1 class="title">Login</h1>
+</div>
+
 <ion-view class="stock">
-  <ion-content class="test">
-    <img class="logo" src="../../../img/logo_v4.PNG"/>
-    <nav class="segmented-button">
-      <input type="radio" name="seg-1" value="Sign In" id="seg-sign-in" checked>
-      <label for="seg-sign-in" class="first">Sign In</label>
-      <input type="radio" name="seg-1" value="Register" id="seg-register">
-      <label for="seg-register" class="last">Register</label>
-    </nav>
-    <h1>Service App</h1>
+  <ion-content class="has-header test">
+    <!--<nav class="segmented-button">-->
+      <!--<input type="radio" name="seg-1" value="Sign In" id="seg-sign-in" checked>-->
+      <!--<label for="seg-sign-in" class="first">Sign In</label>-->
+      <!--<input type="radio" name="seg-1" value="Register" id="seg-register">-->
+      <!--<label for="seg-register" class="last">Register</label>-->
+    <!--</nav>-->
+    <div class="item item-icon-left">
+      <i class="icon ion-search"></i>
+      <h1 style="display: inline;" class="title">Service App</h1>
+    </div>
     <div class="item-input-inset">
       <label class="item-input-wrapper">
         <span class="input-label">Username</span>
-        <input type="text">
+        <input type="text" name="username">
       </label>
     </div>
     <div class="item-input-inset">
       <label class="item-input-wrapper">
         <span class="input-label">Password</span>
-        <input id="password-field" type="password">
+        <input type="password" name="password">
       </label>
     </div>
-    <button class="button button-block button-balanced" ng-click="lc.go()">
+    <button style="display: block; width: 70%; margin-left: auto; margin-right: auto; margin-bottom: 10px"
+            class="button button-balanced item-icon-left" ng-click="lc.login()">
+      <i class="icon ion-log-in"></i>
       Proceed
     </button>
-    <button class="button button-block button-positive" ng-click="lc.go()">
+    <button style="display: block; width: 70%; margin-left: auto; margin-right: auto; margin-bottom: 10px; background-color: #3B5998"
+            class="button button-positive item-icon-left" ng-click="lc.login()">
+      <i class="icon ion-social-facebook"></i>
       Log-in With Facebook
     </button>
-    <button class="button button-block button-assertive" ng-click="lc.go()">
+    <button style="display: block; width: 70%; margin-left: auto; margin-right: auto; margin-bottom: 10px"
+            class="button button-assertive item-icon-left" ng-click="lc.login()">
+      <i class="icon ion-social-google"></i>
       Log-in With Google
     </button>
   </ion-content>

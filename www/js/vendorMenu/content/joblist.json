@@ -1,0 +1,60 @@
+{
+  "JobList": [
+    {
+	    "image": "../../img/taxi-icon.png",
+	    "name": "Taxi"
+    },
+    {
+      "image": "../../img/travel-icon.png",
+      "name": "Share Travel"
+    },
+    {
+      "image": "../../img/catering-icon.png",
+      "name": "Catering"
+    },
+    {
+      "image": "../../img/computer-icon.png",
+      "name": "Computer & IT"
+    },
+    {
+      "image": "../../img/car-mechanic-icon.png",
+      "name": "Car Mechanic"
+    },
+    {
+      "image": "../../img/plumbling-icon.png",
+      "name": "Plumbing"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "Electrical & Wiring"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "Air Conditioner"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "Private Tuition"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "Baby Sitting"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "Private Instructor"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "Locksmith"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "Mover/Lorry"
+    },
+    {
+      "image": "../../img/logo_v4.png",
+      "name": "House Cleaning"
+    }
+  ]
+}

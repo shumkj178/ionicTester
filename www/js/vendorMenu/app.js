@@ -12,7 +12,8 @@ angular
     'joblist.ctrl',
     'history.ctrl',
     'settings.ctrl',
-    'favourites.ctrl'
+    'subscription.ctrl',
+    'distributor.ctrl'
   ])
 
   .run(function($ionicPlatform,$timeout) {
@@ -98,12 +99,12 @@ angular
         }
       })
 
-      .state('app.favourites', {
-        url: '/favourites',
+      .state('app.subscription', {
+        url: '/subscription',
         views: {
           'menuContent': {
-            templateUrl: 'content/favourites.html',
-            controller: 'FavouritesCtrl as fc'
+            templateUrl: 'content/subscription.html',
+            controller: 'SubscriptionCtrl as fc'
           }
         }
       })
@@ -114,6 +115,16 @@ angular
           'menuContent': {
             templateUrl: '../loginPage/index.html',
             controller: 'LoginCtrl as lc'
+          }
+        }
+      })
+    
+      .state('app.distributor', {
+        url: '/distributor',
+        views: {
+          'menuContent': {
+            templateUrl: 'content/distributor.html',
+            controller: 'DistributorCtrl as dc'
           }
         }
       })

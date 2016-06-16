@@ -10,7 +10,12 @@
       function ($scope, $rootScope, $timeout, $interval, $ionicSideMenuDelegate, $window) {
         //variables
         var self = this;
-        
+
+        self.logout = logout;
+
+        function logout() {
+          $window.location.href = "../../js/loginPage/index.html";
+        }
       }
     ])
 

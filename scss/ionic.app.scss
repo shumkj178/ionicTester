@@ -233,14 +233,13 @@ h1 {
 }
 
 /* joblist.html */
-//favourite too
+//subscription too
 .bar-subheader {
   margin-left: 25%;
 }
 
-//favourite too
-.item-text-center
-{
+//subscription too
+.item-text-center {
   display: flex;
   align-items: center;
   position: absolute;
@@ -250,10 +249,24 @@ h1 {
   font-size: 20px;
 }
 
+/* subscription.html */
+.list-in-order {
+  margin-left: 2.5em;
+  list-style: disc;
+}
+
 /* profile.html */
 .profile-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 30px;
+}
+
+/* distributor.html */
+.item-text-center-dis {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-left: 35%;
+  font-size: 20px;
 }
